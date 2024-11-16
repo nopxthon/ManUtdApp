@@ -58,7 +58,8 @@ fun HomeScreen(
                 horizontalArrangement = Arrangement.spacedBy(30.dp),
             ) {
                 items(player, key = { it.id }) {
-                    HomeItem(player = it) { playerId ->
+                    HomeItem(player = it)
+                    { playerId ->
                         navController.navigate(Screen1.Detail.route +"$playerId")
                     }
                 }
@@ -81,7 +82,8 @@ fun HomeScreen(
         }
                 items(oldPlayer, key = { it.id }) {
                     RowItem(
-                        oldPlayer = it) { oldPlayerId ->
+                        oldPlayer = it)
+                    { oldPlayerId ->
                         navController.navigate(Screen1.DetailOldPlayer.route + "$oldPlayerId")
                     }
                 }

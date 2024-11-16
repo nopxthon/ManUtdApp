@@ -1,6 +1,6 @@
 package com.nopx.manunitedplayer.model
 
-data class Player(
+data class  Player(
     val id: Int,
     val name: String,
     val position: String,

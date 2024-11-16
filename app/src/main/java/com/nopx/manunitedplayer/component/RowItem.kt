@@ -51,7 +51,7 @@ fun RowItem(
 
 @Preview(showBackground = true)
 @Composable
-fun RowItemPreview() {
+private fun RowItemPreview() {
     ManUnitedPlayerTheme {
         RowItem(
             oldPlayer = OldPlayer(1, "Wayne Rooney", "2004", "Centre-Forward", R.drawable.rooney),

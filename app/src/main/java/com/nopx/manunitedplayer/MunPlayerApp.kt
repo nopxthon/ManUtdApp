@@ -39,7 +39,6 @@ import androidx.navigation.navArgument
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MunPlayerApp(
-    modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController()
 ) {
     Scaffold(
@@ -68,7 +67,6 @@ fun MunPlayerApp(
         bottomBar = {
             BottomBar(navController)
         },
-        modifier = modifier
     ) { contentPadding ->
         NavHost(
             navController = navController,

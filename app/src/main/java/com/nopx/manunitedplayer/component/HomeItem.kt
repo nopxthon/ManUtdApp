@@ -42,8 +42,8 @@ fun HomeItem(
             color = Color.Black,
             modifier = Modifier
                 .padding(bottom = 4.dp)
-                .width(130.dp)
-                .height(180.dp),
+                .width(100.dp)
+                .height(150.dp),
             shadowElevation = 10.dp
         ) {
             Image(
